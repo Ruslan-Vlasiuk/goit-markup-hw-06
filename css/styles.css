@@ -531,7 +531,7 @@ main {
   line-height: 1.11;
   text-align: center;
   color: var(--white);
-  max-width: 320px;
+  max-width: 212px;
   margin: 0 auto;
 }
 
@@ -1069,6 +1069,9 @@ main {
   margin-left: 16px;
 }
 
+.logo-footer .span {
+  color: var(--iris);
+}
 /* ====== MODAL ====== */
 .backdrop {
   position: fixed;
