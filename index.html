@@ -27,11 +27,22 @@
       <div class="container">
         <nav class="navigation">
           <!-- logo -->
-          <a class="link logo-header" href="./index.html"
-            ><span class="span">WEB</span>STUDIO</a
-          >
-          <!-- navigation -->
+          <a class="link logo-header" href="./index.html">
+            <span class="span">WEB</span>STUDIO
+          </a>
 
+          <!-- Кнопка мобільного меню -->
+          <button
+            type="button"
+            class="menu-toggle js-open-menu"
+            aria-label="Open mobile menu"
+          >
+            <svg width="24" height="24">
+              <use href="./images/icons.svg#icon-menu"></use>
+            </svg>
+          </button>
+
+          <!-- navigation -->
           <ul class="list nav-list">
             <li class="nav-item">
               <a class="link nav-link active" href="./index.html">Studio</a>
@@ -49,9 +60,9 @@
         <address class="contacts">
           <ul class="list contacts-list">
             <li class="contacts-item">
-              <a class="link contacts-link" href="mailto:info@devstudio.com"
-                >info@devstudio.com</a
-              >
+              <a class="link contacts-link" href="mailto:info@devstudio.com">
+                info@devstudio.com
+              </a>
             </li>
             <li class="contacts-item">
               <a class="link contacts-link" href="tel:+110001111111">
@@ -60,6 +71,93 @@
             </li>
           </ul>
         </address>
+      </div>
+
+      <!-- МОБІЛЬНЕ МЕНЮ -->
+      <div class="mobile-menu js-menu-container">
+        <div class="mobile-menu-container">
+          <!-- Кнопка закриття -->
+          <button
+            type="button"
+            class="menu-close-btn js-close-menu"
+            aria-label="Close mobile menu"
+          >
+            <svg width="8" height="8">
+              <use href="./images/icons.svg#icon-close"></use>
+            </svg>
+          </button>
+
+          <!-- Навігація -->
+          <nav class="mobile-nav">
+            <ul class="list mobile-nav-list">
+              <li>
+                <a class="link mobile-nav-link active" href="./index.html">
+                  Studio
+                </a>
+              </li>
+              <li>
+                <a class="link mobile-nav-link" href="">Portfolio</a>
+              </li>
+              <li>
+                <a class="link mobile-nav-link" href="">Contacts</a>
+              </li>
+            </ul>
+          </nav>
+
+          <!-- Контакти -->
+          <address class="mobile-contacts">
+            <ul class="list mobile-contacts-list">
+              <li>
+                <a
+                  class="link mobile-contacts-link accent"
+                  href="tel:+110001111111"
+                >
+                  +11 (000) 111-11-11
+                </a>
+              </li>
+              <li>
+                <a
+                  class="link mobile-contacts-link"
+                  href="mailto:info@devstudio.com"
+                >
+                  info@devstudio.com
+                </a>
+              </li>
+            </ul>
+          </address>
+
+          <!-- Соцмережі -->
+          <ul class="list mobile-social-list">
+            <li class="mobile-social-item">
+              <a href="" class="link mobile-social-link">
+                <svg width="24" height="24">
+                  <use href="./images/icons.svg#icon-instagram"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="mobile-social-item">
+              <a href="" class="link mobile-social-link">
+                <svg width="24" height="24">
+                  <use href="./images/icons.svg#icon-twitter"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="mobile-social-item">
+              <a href="" class="link mobile-social-link">
+                <svg width="24" height="24">
+                  <use href="./images/icons.svg#icon-facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="mobile-social-item">
+              <a href="" class="link mobile-social-link">
+                <svg width="24" height="24">
+                  <use href="./images/icons.svg#icon-linkedin"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
       </div>
     </header>
 
@@ -137,6 +235,10 @@
             <li class="team-item">
               <img
                 class="team-img"
+                srcset="
+                  ./images/mark_guerrero.jpg    1x,
+                  ./images/mark_guerrero@2x.jpg 2x
+                "
                 src="./images/mark_guerrero.jpg"
                 alt="Mark Guerrero, Product Designer"
                 width="264"
@@ -180,6 +282,7 @@
             <li class="team-item">
               <img
                 class="team-img"
+                srcset="./images/tom_ford.jpg 1x, ./images/tom_ford@2x.jpg 2x"
                 src="./images/tom_ford.jpg"
                 alt="Tom Ford, UX Designer"
                 width="264"
@@ -223,6 +326,10 @@
             <li class="team-item">
               <img
                 class="team-img"
+                srcset="
+                  ./images/camila_garcia.jpg    1x,
+                  ./images/camila_garcia@2x.jpg 2x
+                "
                 src="./images/camila_garcia.jpg"
                 alt="Camila Garcia, Project Manager"
                 width="264"
@@ -268,6 +375,10 @@
             <li class="team-item">
               <img
                 class="team-img"
+                srcset="
+                  ./images/daniel_wilson.jpg    1x,
+                  ./images/daniel_wilson@2x.jpg 2x
+                "
                 src="./images/daniel_wilson.jpg"
                 alt="Daniel Wilson, Backend Developer"
                 width="264"
@@ -321,6 +432,10 @@
               <div class="portfolio-img-wrapper">
                 <img
                   class="portfolio-img"
+                  srcset="
+                    ./images/banking_app.jpg    1x,
+                    ./images/banking_app@2x.jpg 2x
+                  "
                   src="./images/banking_app.jpg"
                   alt="Banking App"
                   width="360"
@@ -341,6 +456,10 @@
               <div class="portfolio-img-wrapper">
                 <img
                   class="portfolio-img"
+                  srcset="
+                    ./images/cashless_payment.jpg    1x,
+                    ./images/cashless_payment@2x.jpg 2x
+                  "
                   src="./images/cashless_payment.jpg"
                   alt="Cashless Payment"
                   width="360"
@@ -361,6 +480,10 @@
               <div class="portfolio-img-wrapper">
                 <img
                   class="portfolio-img"
+                  srcset="
+                    ./images/meditation_app.jpg    1x,
+                    ./images/meditation_app@2x.jpg 2x
+                  "
                   src="./images/meditation_app.jpg"
                   alt="Meditation App"
                   width="360"
@@ -381,6 +504,10 @@
               <div class="portfolio-img-wrapper">
                 <img
                   class="portfolio-img"
+                  srcset="
+                    ./images/taxi_service.jpg    1x,
+                    ./images/taxi_service@2x.jpg 2x
+                  "
                   src="./images/taxi_service.jpg"
                   alt="Taxi Service"
                   width="360"
@@ -401,6 +528,10 @@
               <div class="portfolio-img-wrapper">
                 <img
                   class="portfolio-img"
+                  srcset="
+                    ./images/screen_illustrations.jpg    1x,
+                    ./images/screen_illustrations@2x.jpg 2x
+                  "
                   src="./images/screen_illustrations.jpg"
                   alt="Screen Illustrations"
                   width="360"
@@ -421,6 +552,10 @@
               <div class="portfolio-img-wrapper">
                 <img
                   class="portfolio-img"
+                  srcset="
+                    ./images/online_courses.jpg    1x,
+                    ./images/online_courses@2x.jpg 2x
+                  "
                   src="./images/online_courses.jpg"
                   alt="Online Courses"
                   width="360"
@@ -598,5 +733,7 @@
         </form>
       </div>
     </div>
+    <!-- Мобільне меню -->
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>
