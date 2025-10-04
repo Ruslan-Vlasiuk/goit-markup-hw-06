@@ -655,6 +655,7 @@
                 type="text"
                 name="user-name"
                 id="user-name"
+                required
               />
               <svg class="modal-icon" height="24" width="18">
                 <use href="./images/icons.svg#icon-man"></use>
@@ -670,6 +671,9 @@
                 type="tel"
                 name="user-phone"
                 id="user-phone"
+                required
+                pattern="[0-9]+"
+                title="Only numbers allowed"
               />
               <svg class="modal-icon" height="24" width="18">
                 <use href="./images/icons.svg#icon-phone"></use>
@@ -685,6 +689,7 @@
                 type="email"
                 name="user-email"
                 id="user-email"
+                required
               />
               <svg class="modal-icon" height="24" width="18">
                 <use href="./images/icons.svg#icon-message"></use>
@@ -709,6 +714,7 @@
               name="user-privacy"
               value="true"
               id="user-privacy"
+              required
             />
             <label class="checkbox-label" for="user-privacy">
               <span class="custom-checkbox">
